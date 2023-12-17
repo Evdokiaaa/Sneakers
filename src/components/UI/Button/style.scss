@@ -1,0 +1,20 @@
+@import "@/assets/css/variables"; //! might not working in deploy
+
+.btn {
+  display: inline-flex;
+  gap: 15px;
+  align-items: center;
+  color: $white;
+  font-weight: 700;
+  padding: 17px 77px;
+  border-radius: 10px;
+  background: $orange;
+  box-shadow: 0px 8px 10px 0px $pale-orange;
+  border: 1px solid $orange;
+  cursor: pointer;
+  transition: 0.1s linear;
+  user-select: none;
+  &:hover {
+    opacity: 0.9;
+  }
+}

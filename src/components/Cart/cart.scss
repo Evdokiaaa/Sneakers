@@ -1,0 +1,29 @@
+.cart {
+  position: relative;
+}
+
+.popup {
+  position: absolute;
+  top: 80px;
+  right: -200px;
+  width: 400px;
+  background: #fff;
+  border-radius: 10px;
+  &__title {
+    color: #1d2025;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 27px 0 27px 24px;
+  }
+  &__items {
+    padding: 0 23px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__btn {
+    display: flex;
+    margin: 30px 0;
+    justify-content: center;
+  }
+}

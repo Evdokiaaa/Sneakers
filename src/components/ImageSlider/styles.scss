@@ -1,0 +1,62 @@
+.slider {
+  &__container {
+    position: relative;
+  }
+  &__main {
+    &:hover .arrows {
+      opacity: 1;
+    }
+  }
+  &__main-image {
+    border-radius: 20px;
+    width: 447px;
+    height: 567px;
+  }
+  &__support-container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-top: 30px;
+  }
+  &__support-image {
+    height: 88px;
+    width: 88px;
+    border-radius: 15px;
+    &-block {
+      transition: filter 0.3s ease;
+    }
+  }
+  &__active {
+    filter: brightness(70%);
+  }
+}
+.arrows {
+  position: absolute;
+  height: 80%;
+  width: 95%;
+  top: 0;
+  left: 10px;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.arrow {
+  width: 20px;
+  height: 20px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  padding: 5px;
+  cursor: pointer;
+  z-index: 2;
+  transition: transform 0.2s ease;
+}
+.left-arrow {
+  transform: rotate(135deg);
+}
+
+.right-arrow {
+  transform: rotate(-45deg);
+}

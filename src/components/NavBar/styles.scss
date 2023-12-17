@@ -1,0 +1,8 @@
+.nav {
+  flex-basis: 65%;
+  &__items {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+}

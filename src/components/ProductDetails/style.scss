@@ -1,0 +1,75 @@
+@import "@/assets/css/variables"; //! might not working in deploy
+.product__details {
+  max-width: 450px;
+  &-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &-company {
+    color: $orange;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.12px;
+    text-transform: uppercase;
+  }
+  &-title {
+    color: $dark-blue;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 48px;
+    margin: 19px 0 35px;
+  }
+  &-desc {
+    color: $grey-text;
+    font-weight: 500;
+    line-height: 26px;
+    //! fix in future
+  }
+  &-price {
+    color: $dark-blue;
+    font-size: 30px;
+    display: flex;
+    gap: 16px;
+    font-weight: 700;
+    margin: 30px 0 10px;
+    &-old {
+      color: $dark-blue;
+      text-decoration-line: line-through;
+      font-weight: 700;
+    }
+  }
+  &-discount {
+    color: $orange;
+    background: $pale-orange;
+    font-weight: 700;
+    padding: 0 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+  }
+  &-buttons {
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+  }
+  &-button {
+    width: 157px;
+    height: 55px;
+    background: $light-white;
+    padding: 10px 16px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+    &-value {
+      user-select: none;
+    }
+  }
+}
+.plus,
+.minus {
+  cursor: pointer;
+}
