@@ -33,6 +33,7 @@ const ImageSlider = () => {
       <div className="slider__container">
         <div className="slider__main">
           <img className="slider__main-image" src={mainImage} alt="image" />
+
           <div className="arrows">
             <span
               className="arrow left-arrow"

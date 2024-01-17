@@ -1,15 +1,19 @@
 import React from "react";
 import CartItem from "@/components/CartItem";
 import CartLogo from "@/assets/images/cart.svg";
-import "./cart.scss";
 import UiButton from "@/components/UI/Button";
 import { useSelector } from "react-redux";
+import "./cart.scss";
 const Cart = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   const products = useSelector((state) => state.cart.items); //Массив продуктов
   return (
     <div className="cart">
       <div className="cart__container">
+        {products.length > 0 ? (
+          <h6 className="cart__items">{products.length}</h6>
+        ) : null}
+        {/*null?*/}
         <img src={CartLogo} alt="cart" onClick={() => setIsOpen(!isOpen)} />
       </div>
       {isOpen && (
@@ -30,7 +34,7 @@ const Cart = () => {
                 ))
               ) : (
                 <li className="popup__empty">
-                  <h2 className="popup__empty-title">Корзина пустая</h2>
+                  <h2 className="popup__empty-title">Cart is empty</h2>
                 </li>
               )}
             </ul>
